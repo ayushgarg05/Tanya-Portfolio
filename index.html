@@ -1983,10 +1983,10 @@
           <div class="filter-container" id="filter-container">
             <button class="filter-btn active" data-category="all">All Projects</button>
             <button class="filter-btn" data-category="thesis">Thesis</button>
-            <button class="filter-btn" data-category="studio">Studio</button>
-            <button class="filter-btn" data-category="urban">Urban</button>
-            <button class="filter-btn" data-category="conservation">Conservation</button>
-            <button class="filter-btn" data-category="interior">Interior</button>
+            <button class="filter-btn" data-category="internship">Internship</button>
+            <button class="filter-btn" data-category="studio">Studio Project</button>
+            <button class="filter-btn" data-category="visualizations">Visualizations</button>
+            <button class="filter-btn" data-category="competitions">Competitions</button>
           </div>
         </div>
 
@@ -2021,31 +2021,111 @@
                 <span class="project-tag">Thesis</span>
                 <span class="project-year">2026</span>
               </div>
-              <a href="javascript:void(0)" onclick="openProjectModal(1)" class="project-title">Thesis Design Project</a>
-              <p class="project-desc">Architectural thesis exploring social housing, modular planning, and community-centric urban spaces.</p>
+              <a href="javascript:void(0)" onclick="openProjectModal(1)" class="project-title">Modular Social Housing</a>
+              <p class="project-desc">Architectural thesis exploring high-density social housing module units, micro-courtyards and neighborhood-centric planning.</p>
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="project-card" data-cat="studio">
+          <div class="project-card" data-cat="internship">
             <div class="project-frame-wrapper" onclick="openProjectModal(2)">
               <div class="drawing-frame aspect-4-3">
                 <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
                   <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
                   <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  
-                  <!-- Abstract blueprint: Residential complex schematic elevation -->
+                  <!-- Commercial layout -->
+                  <rect x="50" y="50" width="300" height="200" class="blueprint-path-bold" />
+                  <line x1="150" y1="50" x2="150" y2="250" class="blueprint-path" />
+                  <line x1="250" y1="50" x2="250" y2="250" class="blueprint-path" />
+                  <circle cx="100" cy="150" r="25" class="blueprint-accent" />
+                  <circle cx="200" cy="150" r="25" class="blueprint-accent" />
+                  <circle cx="300" cy="150" r="25" class="blueprint-accent" />
+                </svg>
+                <div class="project-overlay"></div>
+                <div class="project-view-label">VIEW DRAWING</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Internship</span>
+                <span class="project-year">2025</span>
+              </div>
+              <a href="javascript:void(0)" onclick="openProjectModal(2)" class="project-title">Commercial Complex Documentation</a>
+              <p class="project-desc">Preparation and drafting of comprehensive working drawings, spatial layouts, and detailed project reports for public commercial complexes.</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-cat="internship">
+            <div class="project-frame-wrapper" onclick="openProjectModal(3)">
+              <div class="drawing-frame aspect-4-3">
+                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <!-- BIM modeling blueprint -->
+                  <rect x="60" y="40" width="280" height="220" class="blueprint-path-bold" />
+                  <line x1="60" y1="110" x2="340" y2="110" class="blueprint-path" />
+                  <line x1="60" y1="180" x2="340" y2="180" class="blueprint-path" />
+                  <line x1="200" y1="40" x2="200" y2="260" class="blueprint-path-bold" stroke-dasharray="3,3" />
+                </svg>
+                <div class="project-overlay"></div>
+                <div class="project-view-label">VIEW DRAWING</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Internship</span>
+                <span class="project-year">2025</span>
+              </div>
+              <a href="javascript:void(0)" onclick="openProjectModal(3)" class="project-title">Residential Revit BIM Modeling</a>
+              <p class="project-desc">Creating precise architectural models (LOD 300) in Autodesk Revit, producing structural configurations, and rendering files.</p>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-cat="internship">
+            <div class="project-frame-wrapper" onclick="openProjectModal(4)">
+              <div class="drawing-frame aspect-4-3">
+                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <!-- MEP layout -->
+                  <path d="M 50,80 L 350,80 L 350,220 L 50,220 Z" class="blueprint-path-bold" />
+                  <path d="M 80,110 L 320,110 L 320,190 L 80,190 Z" class="blueprint-path" />
+                  <circle cx="150" cy="150" r="15" class="blueprint-accent" />
+                  <circle cx="250" cy="150" r="15" class="blueprint-accent" />
+                  <line x1="150" y1="150" x2="250" y2="150" class="blueprint-accent" stroke-width="2" />
+                </svg>
+                <div class="project-overlay"></div>
+                <div class="project-view-label">VIEW DRAWING</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Internship</span>
+                <span class="project-year">2024</span>
+              </div>
+              <a href="javascript:void(0)" onclick="openProjectModal(4)" class="project-title">MEP & HVAC Coordination Design</a>
+              <p class="project-desc">BIM coordination modeling (LOD 200) for building services, electrical design plans, and schematic documentation.</p>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-cat="studio">
+            <div class="project-frame-wrapper" onclick="openProjectModal(5)">
+              <div class="drawing-frame aspect-4-3">
+                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <!-- Housing Studio SVG -->
                   <line x1="40" y1="240" x2="360" y2="240" class="blueprint-path-bold" />
                   <rect x="80" y="80" width="240" height="160" class="blueprint-path-bold" />
-                  <!-- Floors lines -->
                   <line x1="80" y1="120" x2="320" y2="120" class="blueprint-path" />
                   <line x1="80" y1="160" x2="320" y2="160" class="blueprint-path" />
                   <line x1="80" y1="200" x2="320" y2="200" class="blueprint-path" />
-                  <!-- Columns vertical projection -->
                   <line x1="140" y1="80" x2="140" y2="240" class="blueprint-path" />
                   <line x1="200" y1="80" x2="200" y2="240" class="blueprint-path-bold" stroke-dasharray="2,2" />
                   <line x1="260" y1="80" x2="260" y2="240" class="blueprint-path" />
-                  <!-- Sun protection architectural elements -->
                   <path d="M 80,80 L 100,100 M 140,80 L 160,100 M 200,80 L 220,100 M 260,80 L 280,100" class="blueprint-accent" />
                   <circle cx="200" cy="50" r="10" class="blueprint-accent" />
                   <line x1="200" y1="50" x2="240" y2="20" class="blueprint-accent" />
@@ -2057,142 +2137,26 @@
             <div class="project-info">
               <div class="project-meta">
                 <span class="project-tag">Studio Project</span>
-                <span class="project-year">2025</span>
-              </div>
-              <a href="javascript:void(0)" onclick="openProjectModal(2)" class="project-title">Housing Studio</a>
-              <p class="project-desc">Residential housing system with key focuses on thermal-efficiency, green wind tunnels, and passive cooling.</p>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card" data-cat="urban">
-            <div class="project-frame-wrapper" onclick="openProjectModal(3)">
-              <div class="drawing-frame aspect-4-3">
-                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  
-                  <!-- Abstract blueprint: Cultural core radial layout mapping -->
-                  <circle cx="200" cy="150" r="120" class="blueprint-path" />
-                  <circle cx="200" cy="150" r="90" class="blueprint-path" />
-                  <circle cx="200" cy="150" r="60" class="blueprint-path-bold" />
-                  <circle cx="200" cy="150" r="30" class="blueprint-path" />
-                  <!-- Axes rays -->
-                  <line x1="200" y1="20" x2="200" y2="280" class="blueprint-path-bold" stroke-dasharray="5,5" />
-                  <line x1="70" y1="150" x2="330" y2="150" class="blueprint-path-bold" stroke-dasharray="5,5" />
-                  <line x1="115" y1="65" x2="285" y2="235" class="blueprint-path" />
-                  <line x1="285" y1="65" x2="115" y2="235" class="blueprint-path" />
-                  
-                  <rect x="185" y="135" width="30" height="30" class="blueprint-accent" />
-                </svg>
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-tag">Urban Design</span>
                 <span class="project-year">2024</span>
               </div>
-              <a href="javascript:void(0)" onclick="openProjectModal(3)" class="project-title">Cultural Centre</a>
-              <p class="project-desc">A complex cultural core integrating civic squares, amphitheaters, and local stone craftsmanship.</p>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card" data-cat="urban">
-            <div class="project-frame-wrapper" onclick="openProjectModal(4)">
-              <div class="drawing-frame aspect-4-3">
-                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  
-                  <!-- Abstract street layout drafting -->
-                  <line x1="30" y1="100" x2="370" y2="100" class="blueprint-path-bold" />
-                  <line x1="30" y1="200" x2="370" y2="200" class="blueprint-path-bold" />
-                  <!-- Pedestrian lanes crossing -->
-                  <line x1="120" y1="100" x2="120" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-                  <line x1="160" y1="100" x2="160" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-                  <line x1="240" y1="100" x2="240" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-                  <line x1="280" y1="100" x2="280" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-                  
-                  <!-- Bicycle route icon abstract -->
-                  <circle cx="200" cy="150" r="15" class="blueprint-accent" />
-                  <circle cx="235" cy="150" r="15" class="blueprint-accent" />
-                  <line x1="200" y1="150" x2="215" y2="130" class="blueprint-accent" />
-                  <line x1="235" y1="150" x2="225" y2="130" class="blueprint-accent" />
-                  <line x1="215" y1="130" x2="225" y2="130" class="blueprint-accent" />
-                </svg>
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-tag">Urban Planning</span>
-                <span class="project-year">2024</span>
-              </div>
-              <a href="javascript:void(0)" onclick="openProjectModal(4)" class="project-title">Urban Streetscape</a>
-              <p class="project-desc">Pedestrian-first public street revitalisation utilizing active transport lanes and rainwater drains.</p>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-card" data-cat="conservation">
-            <div class="project-frame-wrapper" onclick="openProjectModal(5)">
-              <div class="drawing-frame aspect-4-3">
-                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  
-                  <!-- Architectural Industrial trusses structural schematic -->
-                  <path d="M 60,200 L 200,80 L 340,200 Z" class="blueprint-path-bold" />
-                  <line x1="60" y1="200" x2="340" y2="200" class="blueprint-path-bold" />
-                  <!-- Internal truss structure -->
-                  <line x1="130" y1="140" x2="130" y2="200" class="blueprint-path" />
-                  <line x1="200" y1="80" x2="200" y2="200" class="blueprint-path" />
-                  <line x1="270" y1="140" x2="270" y2="200" class="blueprint-path" />
-                  <line x1="130" y1="140" x2="200" y2="200" class="blueprint-accent" />
-                  <line x1="270" y1="140" x2="200" y2="200" class="blueprint-accent" />
-                  <line x1="60" y1="200" x2="130" y2="200" class="blueprint-path" />
-                  
-                  <rect x="50" y="200" width="20" height="40" class="blueprint-path-bold" />
-                  <rect x="330" y="200" width="20" height="40" class="blueprint-path-bold" />
-                </svg>
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-tag">Conservation</span>
-                <span class="project-year">2023</span>
-              </div>
-              <a href="javascript:void(0)" onclick="openProjectModal(5)" class="project-title">Adaptive Reuse</a>
-              <p class="project-desc">Retrofitting and structural revitalisation of an old industrial plant into high-tech collaborative offices.</p>
+              <a href="javascript:void(0)" onclick="openProjectModal(5)" class="project-title">Sustainable Housing Studio</a>
+              <p class="project-desc">Passive cooling system integration, wind channel modeling, and natural material layouts for low carbon footprints.</p>
             </div>
           </div>
 
           <!-- Project 6 -->
-          <div class="project-card" data-cat="interior">
+          <div class="project-card" data-cat="visualizations">
             <div class="project-frame-wrapper" onclick="openProjectModal(6)">
               <div class="drawing-frame aspect-4-3">
                 <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
                   <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
                   <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-                  
-                  <!-- Abstract interior perspectival room sketch -->
-                  <rect x="80" y="60" width="240" height="180" class="blueprint-path-bold" />
-                  <!-- Perspective lines converging to center -->
-                  <line x1="0" y1="0" x2="80" y2="60" class="blueprint-path-bold" />
-                  <line x1="400" y1="0" x2="320" y2="60" class="blueprint-path-bold" />
-                  <line x1="0" y1="300" x2="80" y2="240" class="blueprint-path-bold" />
-                  <line x1="400" y1="300" x2="320" y2="240" class="blueprint-path-bold" />
-                  
-                  <rect x="120" y="140" width="60" height="100" class="blueprint-accent" />
-                  <line x1="220" y1="120" x2="280" y2="120" class="blueprint-path" />
-                  <line x1="220" y1="140" x2="280" y2="140" class="blueprint-path" />
-                  <circle cx="250" cy="90" r="12" class="blueprint-accent" />
+                  <!-- Camera lens projection/visualization perspective -->
+                  <circle cx="200" cy="150" r="60" class="blueprint-path-bold" />
+                  <circle cx="200" cy="150" r="30" class="blueprint-accent" />
+                  <line x1="50" y1="50" x2="350" y2="250" class="blueprint-path" stroke-dasharray="4,4" />
+                  <line x1="350" y1="50" x2="50" y2="250" class="blueprint-path" stroke-dasharray="4,4" />
+                  <rect x="100" y="75" width="200" height="150" class="blueprint-path" />
                 </svg>
                 <div class="project-overlay"></div>
                 <div class="project-view-label">VIEW DRAWING</div>
@@ -2200,19 +2164,73 @@
             </div>
             <div class="project-info">
               <div class="project-meta">
-                <span class="project-tag">Interior</span>
+                <span class="project-tag">Visualizations</span>
+                <span class="project-year">2024</span>
+              </div>
+              <a href="javascript:void(0)" onclick="openProjectModal(6)" class="project-title">High-Fidelity CGI Spatial Renderings</a>
+              <p class="project-desc">Interactive exterior daylight analysis, detailed texture mapping, material realism models and spatial visualization.</p>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card" data-cat="competitions">
+            <div class="project-frame-wrapper" onclick="openProjectModal(7)">
+              <div class="drawing-frame aspect-4-3">
+                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <path d="M 60,220 C 120,80, 280,80, 340,220 Z" class="blueprint-path-bold" />
+                  <line x1="40" y1="220" x2="360" y2="220" class="blueprint-path-bold" />
+                  <line x1="200" y1="80" x2="200" y2="220" class="blueprint-path" stroke-dasharray="3,3" />
+                  <circle cx="200" cy="150" r="40" class="blueprint-accent" />
+                  <line x1="160" y1="150" x2="240" y2="150" class="blueprint-path" />
+                  <line x1="200" y1="110" x2="200" y2="190" class="blueprint-path" />
+                </svg>
+                <div class="project-overlay"></div>
+                <div class="project-view-label">VIEW DRAWING</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Competitions</span>
                 <span class="project-year">2023</span>
               </div>
-              <a href="javascript:void(0)" onclick="openProjectModal(6)" class="project-title">Interior Design Studio</a>
-              <p class="project-desc">Advanced residential interior modeling with a sharp focus on light angles, and local raw wood textures.</p>
+              <a href="javascript:void(0)" onclick="openProjectModal(7)" class="project-title">Eco-Shelter Competition Proposal</a>
+              <p class="project-desc">Award-winning cost-effective housing node utilizing dynamic organic canopies, structural local materials, and solar harvesting.</p>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="project-card" data-cat="competitions">
+            <div class="project-frame-wrapper" onclick="openProjectModal(8)">
+              <div class="drawing-frame aspect-4-3">
+                <svg class="drawing-svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+                  <line x1="50" y1="240" x2="350" y2="240" class="blueprint-path-bold" />
+                  <path d="M 100,240 L 120,100 L 300,80 L 260,140 L 140,140 L 140,240" class="blueprint-path-bold" fill="none" />
+                  <line x1="120" y1="100" x2="300" y2="240" class="blueprint-accent" />
+                  <line x1="140" y1="140" x2="300" y2="80" class="blueprint-path" />
+                  <circle cx="300" cy="80" r="8" class="blueprint-accent" />
+                </svg>
+                <div class="project-overlay"></div>
+                <div class="project-view-label">VIEW DRAWING</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Competitions</span>
+                <span class="project-year">2023</span>
+              </div>
+              <a href="javascript:void(0)" onclick="openProjectModal(8)" class="project-title">Urban Landmark Pavilion Design</a>
+              <p class="project-desc">A conceptual parametric lightweight steel structure designed to serve as an dynamic civic landmark assembly pavilion.</p>
             </div>
           </div>
 
         </div>
 
-        <div class="works-footer">
-          <!-- Centered CTA works -->
-          <a href="#contact" class="btn btn-outlined">View All Works</a>
+        <div class="works-footer" id="works-footer">
+          <button id="btn-view-all" class="btn btn-outlined">View All Projects</button>
         </div>
 
       </div>
@@ -2451,7 +2469,7 @@
       // Project Data definitions
       const projects = {
         1: {
-          title: "Thesis Design Project",
+          title: "Modular Social Housing",
           tag: "Thesis",
           year: "2026",
           desc: "An architectural study assessing modern modular high-density community residential units. Employs pre-fabricated spatial volumes, scalable framework modules, solar path optimisations, and public courtyard integrations surrounding vertical structural nodes.",
@@ -2471,11 +2489,59 @@
           `
         },
         2: {
-          title: "Housing Studio",
-          tag: "Studio Project",
+          title: "Commercial Complex Documentation",
+          tag: "Internship",
           year: "2025",
+          desc: "Preparation and drafting of comprehensive working drawings, spatial layouts, and detailed project reports for public commercial complexes.",
+          label: "DRWG-02 // COMMERCIAL STRUCTURE LAYOUT",
+          svg: `
+            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <rect x="50" y="50" width="300" height="200" class="blueprint-path-bold" />
+            <line x1="150" y1="50" x2="150" y2="250" class="blueprint-path" />
+            <line x1="250" y1="50" x2="250" y2="250" class="blueprint-path" />
+            <circle cx="100" cy="150" r="25" class="blueprint-accent" />
+            <circle cx="200" cy="150" r="25" class="blueprint-accent" />
+            <circle cx="300" cy="150" r="25" class="blueprint-accent" />
+          `
+        },
+        3: {
+          title: "Residential Revit BIM Modeling",
+          tag: "Internship",
+          year: "2025",
+          desc: "Creating precise architectural models (LOD 300) in Autodesk Revit, producing structural configurations, and rendering files.",
+          label: "DRWG-03 // MULTI-FAMILY RECOVERY MODEL",
+          svg: `
+            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <rect x="60" y="40" width="280" height="220" class="blueprint-path-bold" />
+            <line x1="60" y1="110" x2="340" y2="110" class="blueprint-path" />
+            <line x1="60" y1="180" x2="340" y2="180" class="blueprint-path" />
+            <line x1="200" y1="40" x2="200" y2="260" class="blueprint-path-bold" stroke-dasharray="3,3" />
+          `
+        },
+        4: {
+          title: "MEP & HVAC Coordination Design",
+          tag: "Internship",
+          year: "2024",
+          desc: "BIM coordination modeling (LOD 200) for building services, electrical design plans, and schematic documentation.",
+          label: "DRWG-04 // MEP SYSTEM COORDINATION",
+          svg: `
+            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <path d="M 50,80 L 350,80 L 350,220 L 50,220 Z" class="blueprint-path-bold" />
+            <path d="M 80,110 L 320,110 L 320,190 L 80,190 Z" class="blueprint-path" />
+            <circle cx="150" cy="150" r="15" class="blueprint-accent" />
+            <circle cx="250" cy="150" r="15" class="blueprint-accent" />
+            <line x1="150" y1="150" x2="250" y2="150" class="blueprint-accent" stroke-width="2" />
+          `
+        },
+        5: {
+          title: "Sustainable Housing Studio",
+          tag: "Studio Project",
+          year: "2024",
           desc: "This project explores sustainable high-density living with smart passive environmental design. Focuses on natural micro-climatic control using local brick masonry, building orientations corresponding to regional breeze patterns, and modular stack ventilation layers.",
-          label: "DRWG-02 // THERMAL RE-VENTILATION CHANNELS",
+          label: "DRWG-05 // PASSIVE SOLAR STUDY",
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -2492,87 +2558,53 @@
             <line x1="200" y1="50" x2="240" y2="20" class="blueprint-accent" />
           `
         },
-        3: {
-          title: "Cultural Centre",
-          tag: "Urban Design",
-          year: "2024",
-          desc: "A cultural hub styled in dialogue with regional historical brick structures. It unites dynamic learning classrooms, public libraries, performance auditoriums, and open public terraces that preserve existing local old trees.",
-          label: "DRWG-03 // RADIAL CULTURAL COMPLEX AXES",
-          svg: `
-            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <circle cx="200" cy="150" r="120" class="blueprint-path" />
-            <circle cx="200" cy="150" r="90" class="blueprint-path" />
-            <circle cx="200" cy="150" r="60" class="blueprint-path-bold" />
-            <circle cx="200" cy="150" r="30" class="blueprint-path" />
-            <line x1="200" y1="20" x2="200" y2="280" class="blueprint-path-bold" stroke-dasharray="5,5" />
-            <line x1="70" y1="150" x2="330" y2="150" class="blueprint-path-bold" stroke-dasharray="5,5" />
-            <line x1="115" y1="65" x2="285" y2="235" class="blueprint-path" />
-            <line x1="285" y1="65" x2="115" y2="235" class="blueprint-path" />
-            <rect x="185" y="135" width="30" height="30" class="blueprint-accent" />
-          `
-        },
-        4: {
-          title: "Urban Streetscape",
-          tag: "Urban Planning",
-          year: "2024",
-          desc: "A pedestrian-first street upgrade prioritizing micromobility. Interventions include structured permeable pathways for storm-water management, native vegetation bioswales, and dedicated utility lanes aligned perfectly with safety barriers.",
-          label: "DRWG-04 // PASS ECO-PATHWAYS SYSTEM",
-          svg: `
-            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <line x1="30" y1="100" x2="370" y2="100" class="blueprint-path-bold" />
-            <line x1="30" y1="200" x2="370" y2="200" class="blueprint-path-bold" />
-            <line x1="120" y1="100" x2="120" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-            <line x1="160" y1="100" x2="160" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-            <line x1="240" y1="100" x2="240" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-            <line x1="280" y1="100" x2="280" y2="200" class="blueprint-path" stroke-dasharray="4,4" />
-            <circle cx="200" cy="150" r="15" class="blueprint-accent" />
-            <circle cx="235" cy="150" r="15" class="blueprint-accent" />
-            <line x1="200" y1="150" x2="215" y2="130" class="blueprint-accent" />
-            <line x1="235" y1="150" x2="225" y2="130" class="blueprint-accent" />
-            <line x1="215" y1="130" x2="225" y2="130" class="blueprint-accent" />
-          `
-        },
-        5: {
-          title: "Adaptive Reuse",
-          tag: "Conservation",
-          year: "2023",
-          desc: "Converting a historic unused factory building into dynamic workshops and co-working environments. Leverages lightweight structural spans, preserving original iron framing, and inserts highly insulated modern modules inside.",
-          label: "DRWG-05 // CONFOR-SPAN STEEL FRAME DETAILS",
-          svg: `
-            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <path d="M 60,200 L 200,80 L 340,200 Z" class="blueprint-path-bold" />
-            <line x1="60" y1="200" x2="340" y2="200" class="blueprint-path-bold" />
-            <line x1="130" y1="140" x2="130" y2="200" class="blueprint-path" />
-            <line x1="200" y1="80" x2="200" y2="200" class="blueprint-path" />
-            <line x1="270" y1="140" x2="270" y2="200" class="blueprint-path" />
-            <line x1="130" y1="140" x2="200" y2="200" class="blueprint-accent" />
-            <line x1="270" y1="140" x2="200" y2="200" class="blueprint-accent" />
-            <line x1="60" y1="200" x2="130" y2="200" class="blueprint-path" />
-            <rect x="50" y="200" width="20" height="40" class="blueprint-path-bold" />
-            <rect x="330" y="200" width="20" height="40" class="blueprint-path-bold" />
-          `
-        },
         6: {
-          title: "Interior Design Studio",
-          tag: "Interior",
-          year: "2023",
-          desc: "Craft of modern interiors focusing on timber cladding, indirect shadow gaps, acoustic insulation layers, and precise furniture configurations that maximize spatial ergonomics within tight floor profiles.",
-          label: "DRWG-06 // ERGOMETRIC INTERIOR WALL ELEVATION",
+          title: "High-Fidelity CGI Spatial Renderings",
+          tag: "Visualizations",
+          year: "2024",
+          desc: "Craft of modern rendering and visualization. Focuses on photorealistic lighting, day and night cgi mockups, physical material realism profiles, and interior camera viewpoints.",
+          label: "DRWG-06 // VISUALIZATION PATH TRACING",
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
-            <rect x="80" y="60" width="240" height="180" class="blueprint-path-bold" />
-            <line x1="0" y1="0" x2="80" y2="60" class="blueprint-path-bold" />
-            <line x1="400" y1="0" x2="320" y2="60" class="blueprint-path-bold" />
-            <line x1="0" y1="300" x2="80" y2="240" class="blueprint-path-bold" />
-            <line x1="400" y1="300" x2="320" y2="240" class="blueprint-path-bold" />
-            <rect x="120" y="140" width="60" height="100" class="blueprint-accent" />
-            <line x1="220" y1="120" x2="280" y2="120" class="blueprint-path" />
-            <line x1="220" y1="140" x2="280" y2="140" class="blueprint-path" />
-            <circle cx="250" cy="90" r="12" class="blueprint-accent" />
+            <circle cx="200" cy="150" r="60" class="blueprint-path-bold" />
+            <circle cx="200" cy="150" r="30" class="blueprint-accent" />
+            <line x1="50" y1="50" x2="350" y2="250" class="blueprint-path" stroke-dasharray="4,4" />
+            <line x1="350" y1="50" x2="50" y2="250" class="blueprint-path" stroke-dasharray="4,4" />
+            <rect x="100" y="75" width="200" height="150" class="blueprint-path" />
+          `
+        },
+        7: {
+          title: "Eco-Shelter Competition Proposal",
+          tag: "Competitions",
+          year: "2023",
+          desc: "Award-winning low-cost shelter design leveraging organic structures, highly insulating mud layers, rainwater reservoirs, and solar arrays for remote off-grid communities.",
+          label: "DRWG-07 // COMMUNITY SHELTER ELEVATION",
+          svg: `
+            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <path d="M 60,220 C 120,80, 280,80, 340,220 Z" class="blueprint-path-bold" />
+            <line x1="40" y1="220" x2="360" y2="220" class="blueprint-path-bold" />
+            <line x1="200" y1="80" x2="200" y2="220" class="blueprint-path" stroke-dasharray="3,3" />
+            <circle cx="200" cy="150" r="40" class="blueprint-accent" />
+            <line x1="160" y1="150" x2="240" y2="150" class="blueprint-path" />
+            <line x1="200" y1="110" x2="200" y2="190" class="blueprint-path" />
+          `
+        },
+        8: {
+          title: "Parametric Assembly Pavilion",
+          tag: "Competitions",
+          year: "2023",
+          desc: "Dynamic structural design implementing thin lightweight steel pipes and joints, fabric membranes, and parametric curves creating zero-net wind load and elegant shadows.",
+          label: "DRWG-08 // PAVILION AXIS SCHEMATIC",
+          svg: `
+            <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
+            <line x1="50" y1="240" x2="350" y2="240" class="blueprint-path-bold" />
+            <path d="M 100,240 L 120,100 L 300,80 L 260,140 L 140,140 L 140,240" class="blueprint-path-bold" fill="none" />
+            <line x1="120" y1="100" x2="300" y2="240" class="blueprint-accent" />
+            <line x1="140" y1="140" x2="300" y2="80" class="blueprint-path" />
+            <circle cx="300" cy="80" r="8" class="blueprint-accent" />
           `
         }
       };
@@ -2598,28 +2630,66 @@
         document.body.style.overflow = ''; // allow scroll again
       }
 
-      // Works Dynamic Filtering Mechanism
+      // Works Dynamic Filtering Mechanism with Expansion support
       const filterBtns = document.querySelectorAll('.filter-btn');
       const projectCards = document.querySelectorAll('.project-card');
+      const btnViewAll = document.getElementById('btn-view-all');
+      const worksFooter = document.getElementById('works-footer');
+
+      let showAll = false;
+      let activeCategory = 'all';
+
+      function updateProjectsDisplay() {
+        let visibleCount = 0;
+        projectCards.forEach((card) => {
+          const cardCategory = card.getAttribute('data-cat');
+          const matchesCategory = (activeCategory === 'all' || cardCategory === activeCategory);
+
+          if (matchesCategory) {
+            if (activeCategory === 'all' && !showAll) {
+              if (visibleCount < 4) {
+                card.classList.remove('hidden');
+                visibleCount++;
+              } else {
+                card.classList.add('hidden');
+              }
+            } else {
+              card.classList.remove('hidden');
+              visibleCount++;
+            }
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Toggle "View All Projects" container when category is 'all' and not expanded
+        if (worksFooter) {
+          if (activeCategory === 'all' && !showAll) {
+            worksFooter.style.display = 'flex';
+          } else {
+            worksFooter.style.display = 'none';
+          }
+        }
+      }
 
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-          // Update active button state
           filterBtns.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-
-          const category = btn.getAttribute('data-category');
-
-          projectCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-cat');
-            if (category === 'all' || cardCategory === category) {
-              card.classList.remove('hidden');
-            } else {
-              card.classList.add('hidden');
-            }
-          });
+          activeCategory = btn.getAttribute('data-category');
+          updateProjectsDisplay();
         });
       });
+
+      if (btnViewAll) {
+        btnViewAll.addEventListener('click', () => {
+          showAll = true;
+          updateProjectsDisplay();
+        });
+      }
+
+      // Initial execution
+      updateProjectsDisplay();
 
       // Contact Form - Mailto Direct Handler
       const contactForm = document.getElementById('contact-form');
