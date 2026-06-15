@@ -1725,24 +1725,20 @@
                 <div class="fact-value">Bachelors in Architecture (B.Arch)</div>
               </div>
               <div class="fact-item">
-                <div class="fact-label">University</div>
-                <div class="fact-value">MITS Gwalior</div>
-              </div>
-              <div class="fact-item">
-                <div class="fact-label">Duration</div>
-                <div class="fact-value">Aug 2021 – June 2026</div>
-              </div>
-              <div class="fact-item">
-                <div class="fact-label">Location</div>
-                <div class="fact-value">Gwalior / Bhopal, India</div>
-              </div>
-              <div class="fact-item">
                 <div class="fact-label">Specialisation</div>
                 <div class="fact-value">Architectural Design & BIM</div>
               </div>
               <div class="fact-item">
                 <div class="fact-label">Status</div>
                 <div class="fact-value">Architect and Freelancer</div>
+              </div>
+              <div class="fact-item">
+                <div class="fact-label">Location</div>
+                <div class="fact-value">Gwalior / Bhopal, India</div>
+              </div>
+              <div class="fact-item">
+                <div class="fact-label">Languages</div>
+                <div class="fact-value">Hindi, English</div>
               </div>
             </div>
           </div>
@@ -1920,7 +1916,11 @@
               </div>
               <div class="skill-item">
                 <div class="skill-bullet"></div>
-                <span class="skill-name">DuctSizer / Bluebeam Revu</span>
+                <span class="skill-name">DuctSizer</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-bullet"></div>
+                <span class="skill-name">Bluebeam Revu</span>
               </div>
             </div>
           </div>
@@ -2244,12 +2244,12 @@
                 <td><strong>2025</strong></td>
                 <td>Uttam Architects Award 2025</td>
                 <td>IIA (Indian Institute of Architects)</td>
-                <td><span class="achievement-badge">WINNER — Best Social Design</span></td>
+                <td><span class="achievement-badge">Awarded - Best Social and Cost Effective Design </span></td>
               </tr>
               <tr>
                 <td><strong>2025</strong></td>
                 <td>GATE 2025</td>
-                <td>IIT / MHRD</td>
+                <td>IIT Roorkee</td>
                 <td><span class="achievement-badge">QUALIFIED</span></td>
               </tr>
               <tr>
@@ -2274,7 +2274,7 @@
           <div class="extra-list">
             <div class="extra-item">
               <div class="extra-bullet"></div>
-              <span class="extra-text">President — Archikalaa (2023–2024)</span>
+              <span class="extra-text">President — Newsletter committee (2023–2024)</span>
             </div>
             <div class="extra-item">
               <div class="extra-bullet"></div>
@@ -2282,7 +2282,7 @@
             </div>
             <div class="extra-item">
               <div class="extra-bullet"></div>
-              <span class="extra-text">Vice President — Archikalaa (2022–2023)</span>
+              <span class="extra-text">Vice President — Newsletter committee (2022–2023)</span>
             </div>
             <div class="extra-item">
               <div class="extra-bullet"></div>
@@ -2310,7 +2310,7 @@
             <div>
               <h2 class="contact-title font-display">Let's build something meaningful.</h2>
               <p class="contact-sub body-text">
-                Available for internships, collaborations, and freelance architectural undertakings. Let's form architecture from layout onwards.
+                Available for internships, collaborations, and freelance architectural undertakings.
               </p>
             </div>
 
@@ -2324,15 +2324,6 @@
                   ar.tanyagarg@gmail.com
                 </a>
               </div>
-
-              <!-- Phone -->
-              <a href="tel:+918959447633" class="contact-item">
-                <i data-lucide="phone" class="contact-icon" style="width: 18px; height: 18px;"></i>
-                <div>
-                  <div class="contact-item-tag">Phone Number</div>
-                  <div class="contact-value-text" style="font-family: monospace;">+91 8959447633</div>
-                </div>
-              </a>
 
               <!-- LinkedIn -->
               <a href="https://linkedin.com/in/tanyagarg22" target="_blank" rel="noopener noreferrer" class="contact-item">
@@ -2373,7 +2364,7 @@
               <rect x="60" y="60" width="40" height="40" stroke="#B2D7E9" stroke-width="0.8" fill="none" />
             </svg>
 
-            <form action="https://formspree.io/f/xyzkpvvo" method="POST" class="contact-form" id="contact-form">
+            <form class="contact-form" id="contact-form">
               <div class="form-group">
                 <input type="text" name="name" required placeholder="Name">
               </div>
@@ -2630,44 +2621,26 @@
         });
       });
 
-      // Contact Formspree Dynamic Request Handler (No redirection, beautiful validation)
+      // Contact Form - Mailto Direct Handler
       const contactForm = document.getElementById('contact-form');
       const formStatus = document.getElementById('form-status');
 
-      contactForm.addEventListener('submit', async function(ev) {
+      contactForm.addEventListener('submit', function(ev) {
         ev.preventDefault();
-        const data = new FormData(contactForm);
+        const email = "ar.tanyagarg@gmail.com";
+        const name = contactForm.querySelector('input[name="name"]').value;
+        const fromEmail = contactForm.querySelector('input[name="email"]').value;
+        const subject = contactForm.querySelector('input[name="subject"]').value;
+        const message = contactForm.querySelector('textarea[name="message"]').value;
+        
+        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nFrom: " + fromEmail + "\n\n" + message)}`;
+        
+        window.location.href = mailtoUrl;
+        
         formStatus.style.display = 'block';
-        formStatus.className = 'form-status';
-        formStatus.innerText = 'Transmitting message to site coordinator...';
-
-        try {
-          const response = await fetch(contactForm.action, {
-            method: 'POST',
-            body: data,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-
-          if (response.ok) {
-            formStatus.className = 'form-status success';
-            formStatus.innerText = 'Transmission completed successfully! Tanya will review and connect with you shortly.';
-            contactForm.reset();
-          } else {
-            const responseData = await response.json();
-            if (responseData.errors) {
-              formStatus.className = 'form-status error';
-              formStatus.innerText = responseData.errors.map(error => error.message).join(", ");
-            } else {
-              formStatus.className = 'form-status error';
-              formStatus.innerText = 'Transmission error occurred. Please verify your fields and retry.';
-            }
-          }
-        } catch (error) {
-          formStatus.className = 'form-status error';
-          formStatus.innerText = 'Unable to establish cloud connection. Please try emailing directly!';
-        }
+        formStatus.className = 'form-status success';
+        formStatus.innerText = 'Creating email client draft... Please send the generated draft in your email app!';
+        contactForm.reset();
       });
 
 
