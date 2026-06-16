@@ -2301,11 +2301,19 @@
  
           <!-- Project 6 -->
           <div class="project-card" data-cat="visualizations" data-sub="Zostel">
-            <div class="project-frame-wrapper" onclick="openProjectModal(6)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="The Wayfarer – A Home for Wanderers" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-6-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 6, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/visualizations/zostel/Zostel 01.png" class="drawing-img" id="project-6-img" alt="The Wayfarer – A Home for Wanderers" referrerPolicy="no-referrer" onclick="openProjectModal(6)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 6, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(6)"></div>
+                <div class="project-view-label" onclick="openProjectModal(6)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2323,11 +2331,19 @@
  
           <!-- Project 7 -->
           <div class="project-card" data-cat="visualizations" data-sub="Architectural Institute">
-            <div class="project-frame-wrapper" onclick="openProjectModal(7)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="ARCHON - Academy of Architecture" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-7-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 7, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/visualizations/architectural_institute/01.png" class="drawing-img" id="project-7-img" alt="ARCHON - Academy of Architecture" referrerPolicy="no-referrer" onclick="openProjectModal(7)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 7, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(7)"></div>
+                <div class="project-view-label" onclick="openProjectModal(7)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2757,7 +2773,7 @@
           desc: "Conceived as a welcoming destination for travellers, the zostel combines budget-friendly accommodation with comfortable shared spaces and a publicly accessible restaurant. The design promotes community engagement, cultural exchange, and a memorable stay experience.",
           label: "DRWG-06 // CO-LIVING PERSPECTIVE RENDER",
           hasDetailedDrawings: true,
-          images: ["/tanya_render.jpg"],
+          images: ["/assets/visualizations/zostel/Zostel 01.png"],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -2774,7 +2790,7 @@
           year: "2022",
           desc: "A comprehensive architectural institute designed for undergraduate and postgraduate education, featuring specialized labs, workshops, and studio spaces that encourage hands-on learning and professional development.",
           label: "DRWG-07 // ACADEMY PATH TRACING",
-          images: ["/tanya_render.jpg"],
+          images: ["/assets/visualizations/architectural_institute/01.png", "/assets/visualizations/architectural_institute/02.png"],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -3097,8 +3113,27 @@
         });
       }
 
+      // Card carousels initial visibility configuration
+      function initCardCarousels() {
+        for (const id in projects) {
+          const data = projects[id];
+          const cardFrame = document.getElementById(`project-${id}-frame`);
+          if (!cardFrame) continue;
+          
+          const images = data.images || ["/tanya_render.jpg"];
+          const showArrows = images.length > 1;
+          
+          // Find arrows inside the card frame
+          const arrows = cardFrame.querySelectorAll('.carousel-arrow');
+          arrows.forEach(arrow => {
+            arrow.style.display = showArrows ? 'flex' : 'none';
+          });
+        }
+      }
+
       // Initial execution
       updateProjectsDisplay();
+      initCardCarousels();
 
       // Contact Form - Mailto Direct Handler
       const contactForm = document.getElementById('contact-form');
