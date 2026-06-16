@@ -2193,11 +2193,19 @@
           
           <!-- Project 1 -->
           <div class="project-card" data-cat="thesis">
-            <div class="project-frame-wrapper" onclick="openProjectModal(1)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="Mixed Use IT Park" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-1-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 1, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/thesis/01.png" class="drawing-img" id="project-1-img" alt="Mixed Use IT Park" referrerPolicy="no-referrer" onclick="openProjectModal(1)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 1, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(1)"></div>
+                <div class="project-view-label" onclick="openProjectModal(1)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2214,11 +2222,19 @@
  
           <!-- Project 2 -->
           <div class="project-card" data-cat="internship" data-sub="Revit">
-            <div class="project-frame-wrapper" onclick="openProjectModal(2)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="Revit Portfolio" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-2-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 2, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/internship/revit/01.jpeg" class="drawing-img" id="project-2-img" alt="Revit Portfolio" referrerPolicy="no-referrer" onclick="openProjectModal(2)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 2, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(2)"></div>
+                <div class="project-view-label" onclick="openProjectModal(2)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2236,11 +2252,19 @@
  
           <!-- Project 3 -->
           <div class="project-card" data-cat="internship" data-sub="Structural Design">
-            <div class="project-frame-wrapper" onclick="openProjectModal(3)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="Healthcare Centre-Structural" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-3-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 3, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/internship/structural/01.png" class="drawing-img" id="project-3-img" alt="Healthcare Centre-Structural" referrerPolicy="no-referrer" onclick="openProjectModal(3)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 3, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(3)"></div>
+                <div class="project-view-label" onclick="openProjectModal(3)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2258,11 +2282,19 @@
  
           <!-- Project 4 -->
           <div class="project-card" data-cat="internship" data-sub="Electrical Design">
-            <div class="project-frame-wrapper" onclick="openProjectModal(4)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="Healthcare Centre- Electrical" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-4-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 4, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/internship/electrical/1.jpeg" class="drawing-img" id="project-4-img" alt="Healthcare Centre- Electrical" referrerPolicy="no-referrer" onclick="openProjectModal(4)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 4, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(4)"></div>
+                <div class="project-view-label" onclick="openProjectModal(4)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2280,11 +2312,19 @@
  
           <!-- Project 5 -->
           <div class="project-card" data-cat="studio">
-            <div class="project-frame-wrapper" onclick="openProjectModal(5)">
-              <div class="drawing-frame aspect-4-3">
-                <img src="/tanya_render.jpg" class="drawing-img" alt="Integrated Township" referrerPolicy="no-referrer" />
-                <div class="project-overlay"></div>
-                <div class="project-view-label">VIEW DRAWING</div>
+            <div class="project-frame-wrapper">
+              <div class="drawing-frame aspect-4-3" id="project-5-frame" style="position: relative;">
+                <!-- Prev Arrow -->
+                <button class="carousel-arrow prev" onclick="navigateProjectCarousel(event, 5, -1)" aria-label="Previous Image">
+                  <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+                </button>
+                <img src="/assets/studio_township/01.jpeg" class="drawing-img" id="project-5-img" alt="Integrated Township" referrerPolicy="no-referrer" onclick="openProjectModal(5)" style="cursor: zoom-in; pointer-events: auto;" />
+                <!-- Next Arrow -->
+                <button class="carousel-arrow next" onclick="navigateProjectCarousel(event, 5, 1)" aria-label="Next Image">
+                  <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </button>
+                <div class="project-overlay" onclick="openProjectModal(5)"></div>
+                <div class="project-view-label" onclick="openProjectModal(5)">VIEW DRAWING</div>
               </div>
             </div>
             <div class="project-info">
@@ -2671,7 +2711,12 @@
           desc: "A user-centric IT Park that transforms the conventional work environment through an active lakefront and social spaces. Designed to encourage interaction, relaxation, and a healthier work-life experience.",
           label: "DRWG-01 // MIXED USE IT PARK PLAN",
           hasDetailedDrawings: true,
-          images: ["/tanya_render.jpg"],
+          images: [
+            "/assets/thesis/01.png",
+            "/assets/thesis/02.png",
+            "/assets/thesis/03.jpeg",
+            "/assets/thesis/04.png"
+          ],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -2694,7 +2739,11 @@
           desc: "BIM modelling of an office building in Revit, including Architectural (LOD 300) and MEP systems—HVAC, drainage, and lighting- (LOD 200). The project also involves generating schedules and material take-offs.",
           label: "DRWG-02 // OFFICE BUILDING BIM MODEL",
           hasDetailedDrawings: true,
-          images: ["/tanya_render.jpg"],
+          images: [
+            "/assets/internship/revit/01.jpeg",
+            "/assets/internship/revit/02.jpeg",
+            "/assets/internship/revit/03.png"
+          ],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -2711,7 +2760,11 @@
           year: "2024",
           desc: "Structural designing of a building by preparing column and beam layouts and integrating standard construction details. Structural modeling and analysis in STAAD Pro, using it to generate reinforcement detailing for structural members and optimized slab design through the classification and implementation of one-way and two-way slab systems.",
           label: "DRWG-03 // HEALTHCARE CENTRE STRUCTURAL LAYOUT",
-          images: ["/tanya_render.jpg"],
+          images: [
+            "/assets/internship/structural/01.png",
+            "/assets/internship/structural/02.png",
+            "/assets/internship/structural/03.png"
+          ],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -2730,7 +2783,7 @@
           year: "2024",
           desc: "Electrical layout for a building, incorporating circuit looping, load assessment, and distribution planning. Also contains a detailed Single Line Diagram (SLD) to represent the electrical network, ensuring efficient power distribution.",
           label: "DRWG-04 // ELECTRICAL SYSTEM COORDINATION",
-          images: ["/tanya_render.jpg"],
+          images: ["/assets/internship/electrical/1.jpeg"],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
@@ -2748,7 +2801,10 @@
           desc: "Planned a comprehensive residential township featuring a range of housing typologies, including LIG, MIG, HIG units, row housing, and apartments. Supported by retail, dining, and community amenities, the development fosters a vibrant, inclusive, and connected living environment.",
           label: "DRWG-05 // TOWNSHIP MASTER STUDY",
           hasDetailedDrawings: true,
-          images: ["/tanya_render.jpg"],
+          images: [
+            "/assets/studio_township/01.jpeg",
+            "/assets/studio_township/02.png"
+          ],
           svg: `
             <line x1="0" y1="0" x2="400" y2="300" stroke="#B2D7E9" stroke-width="1" />
             <line x1="400" y1="0" x2="0" y2="300" stroke="#B2D7E9" stroke-width="1" />
