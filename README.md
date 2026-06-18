@@ -29,11 +29,11 @@ All drawing assets must be placed inside the `public/assets/` directory under th
 
 * 🎓 **Thesis (Mixed Use IT Park)**: `public/assets/thesis/` (`01.png`, `02.png`, `03.jpeg`, `04.png`)
 * 💼 **MEP Revit Portfolio**: `public/assets/internship/revit/` (`01.jpeg`, `02.jpeg`, `03.png`)
-* 🏗️ **Structural Drawings**: `public/assets/internship/structural/` (`01.png`, `02.png`, `03.png`)
-* ⚡ **Electrical Design**: `public/assets/internship/electrical/` (`1.jpeg`)
 * 🏘️ **Studio Township**: `public/assets/studio_township/` (`01.jpeg`, `02.png`)
 * 🏨 **Zostel (The Wayfarer)**: `public/assets/visualizations/zostel/` (`Zostel 01.png`)
 * 🏛️ **ARCHON Academy**: `public/assets/visualizations/architectural_institute/` (`01.png`, `02.png`)
+* 🏗️ **Structural Drawings**: `public/assets/internship/structural/` (`01.png`, `02.png`, `03.png`)
+* ⚡ **Electrical Design**: `public/assets/internship/electrical/` (`1.jpeg`)
 * 🕌 **Bhakt Niwas (Competitions)**: `public/assets/competition/` (`Picture0.png` to `Picture3.png`)
 
 ---
